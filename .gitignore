@@ -1,11 +1,6 @@
 /.metadata/
 .recommenders
-<<<<<<< HEAD
 **/.settings
 **/bin
-=======
-/.settings/
-/bin/
->>>>>>> c4e3777ad18f62e22f7a06266398183348a10174
 .classpath
 .project
