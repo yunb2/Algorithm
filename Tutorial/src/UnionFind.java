@@ -1,6 +1,3 @@
-package unionfind;
-
-
 public class UnionFind {
 
 	public static int[] parent;
