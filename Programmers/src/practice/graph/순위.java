@@ -1,6 +1,6 @@
 package practice.graph;
 
-public class ¼øÀ§ {
+public class ìˆœìœ„ {
 
 	public static void main(String[] args) {
 		

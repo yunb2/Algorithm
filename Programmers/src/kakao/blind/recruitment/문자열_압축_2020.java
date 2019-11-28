@@ -1,6 +1,6 @@
 package kakao.blind.recruitment;
 
-public class ¹®ÀÚ¿­_¾ĞÃà_2020 {
+public class ë¬¸ìì—´_ì••ì¶•_2020 {
 
 	public static void main(String[] args) {
 		

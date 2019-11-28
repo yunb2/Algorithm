@@ -3,7 +3,7 @@ package practice.graph;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class °¡Àå¸Õ³ëµå {
+public class ê°€ìž¥ë¨¼ë…¸ë“œ {
 
 	public static void main(String[] args) {
 		

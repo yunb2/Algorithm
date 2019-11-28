@@ -2,7 +2,7 @@ package practice.hash;
 
 import java.util.HashSet;
 
-public class ÀüÈ­¹øÈ£¸ñ·Ï {
+public class ì „í™”ë²ˆí˜¸ëª©ë¡ {
 
 	public static void main(String[] args) {
 		
