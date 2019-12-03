@@ -1,6 +1,5 @@
 public class Solution2 {
 
-
 	public static void main(String[] args) {
 		
 		System.out.println(solution("2{b3{ab}1{tc}}"));

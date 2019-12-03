@@ -5,6 +5,7 @@ public class Solution4 {
 	public static void main(String[] args) {
 		
 		System.out.println(solution(new int[] {5, 3, 1, -1, -1}));
+		System.out.println(solution(new int[] {5, 4}));
 		
 	}
 	
@@ -18,7 +19,7 @@ public class Solution4 {
         stack.push(cur);
 		for(int cnt : inputList) {
 			
-			if(cur == 5 || cur == 10) flag = true;
+			if(cur == 5 || cur == 10 || cur == 22) flag = true;
 			
 			if(cnt<0) {
 				stack.pop();
@@ -53,7 +54,7 @@ public class Solution4 {
 			next = 0;
 			break;
 		case 22:
-			next = 27;
+			next = flag? 23 : 27;
 			break;
 		case 26:
 			next = 22;
