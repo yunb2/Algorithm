@@ -20,14 +20,16 @@ public class 기능개발 {
 		List<Integer> list = new LinkedList<>();
 		int cnt = 1, day = days[0];
 		for(int i=1; i<progresses.length; ++i) {
-			if(days[i]>day) {
-				list.add(cnt);
-				day = days[i];
-				cnt = 1;
-			}else {
-				cnt++;
+			if(days[i]<=day) { 
+				cnt++; 
+				continue; 
 			}
+			
+			list.add(cnt);
+			day = days[i];
+			cnt = 1;
 		}
+		
 		list.add(cnt);
 		
 		int[] answer = new int[list.size()];
