@@ -2,7 +2,7 @@ package practice.stream;
 
 import java.util.ArrayList;
 
-public class Test01 {
+public class StreamInterfaceExample {
 
     public static void main(String[] args) {
 
