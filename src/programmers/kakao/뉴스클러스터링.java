@@ -40,6 +40,7 @@ public class 뉴스클러스터링 {
 
     public static PriorityQueue<String> setQueue(String str) {
         return IntStream.rangeClosed(0, str.length()-2)
+                        .parallel()
                         .mapToObj((n) -> str.substring(n, n+2).toUpperCase())
                         .filter(s -> s.matches("[a-zA-Z]{2}"))
                         .collect(Collectors.toCollection(PriorityQueue::new));
