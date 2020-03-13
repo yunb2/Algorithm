@@ -11,41 +11,31 @@ public class 문자열압축 {
     }
 
     public static int solution(String s) {
+
         int min = s.length();
+
         for(int i = 1; i <= s.length()/2; ++i) {
-            String tmp = compress(s, i);
-            min = Math.min(min, tmp.length());
+            String result = compress(s, i, 1);
+            min = Math.min(min, result.length());
         }
+
         return min;
     }
 
-    public static String compress(String s, int unit) {
+    public static String compress(String s, int unit, int cnt) {
 
+        if(s.length() < unit) return s;
+
+        String prefix = s.substring(0, unit);
+        String post = s.substring(unit);
         StringBuilder sb = new StringBuilder();
-        int i = 0;
 
-        while(i <= s.length()-2*unit) {
-
-            String str1 = s.substring(i, i+unit);
-            int cnt = 1, j = i+unit;
-
-            while(j <= s.length()-unit) {
-
-                String str2 = s.substring(j, j+unit);
-
-                if(!str1.equals(str2)) break;
-
-                cnt++;
-                j += unit;
-            }
-
+        if(!post.startsWith(prefix)) {
             if(cnt > 1) sb.append(cnt);
-            sb.append(str1);
-            i = j;
+            return sb.append(prefix).append(compress(post, unit, 1)).toString();
         }
-        sb.append(s.substring(i));
 
-        return sb.toString();
+        return sb.append(compress(post, unit, cnt+1)).toString();
     }
 
 }
