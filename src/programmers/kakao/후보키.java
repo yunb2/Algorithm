@@ -44,14 +44,14 @@ public class 후보키 {
         return true;
     }
 
-    public static boolean checkUniqueness(int key, String[][] relatation) {
+    public static boolean checkUniqueness(int key, String[][] relation) {
         List<Integer> keys = new LinkedList<>();
         for(int i = 0; i < COL; ++i) {
             if(((key >> i) & 1) == 1) keys.add(i);
         }
 
         Set<String> set = new HashSet<>();
-        for(String[] r : relatation) {
+        for(String[] r : relation) {
             StringBuilder sb = new StringBuilder();
             for(int k : keys) sb.append(r[k]).append("/");
 
