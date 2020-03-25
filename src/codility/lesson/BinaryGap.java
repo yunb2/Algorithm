@@ -1,29 +1,25 @@
 package codility.lesson;
 
+import java.util.stream.IntStream;
+
 public class BinaryGap {
 
     public static void main(String[] args) {
         System.out.println(solution(1041));
         System.out.println(solution(32));
+        System.out.println(solution(15));
     }
 
     public static int solution(int N) {
 
-        String binary = Integer.toBinaryString(N);
-        int max = 0, cnt = 0;
+        String[] zeros = Integer.toBinaryString(N).split("1");
 
-        for(int i=1; i<binary.length(); ++i) {
+        if(zeros.length == 0) return 0;
 
-            if(binary.charAt(i) == '0') {
-                cnt ++;
-                continue;
-            }
-
-            max = Math.max(max, cnt);
-            cnt = 0;
-        }
-
-        return max;
+        return IntStream.range(0, zeros.length + (N%2 - 1))
+                        .map(i -> zeros[i].length())
+                        .max()
+                        .getAsInt();
     }
 
 }
