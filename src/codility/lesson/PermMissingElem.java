@@ -1,6 +1,6 @@
 package codility.lesson;
 
-public class Anonymous {
+public class PermMissingElem {
 
     public int solution(int[] A) {
         long N = A.length;
