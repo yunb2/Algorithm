@@ -1,10 +1,10 @@
-package programmers.kakao.test;
+package programmers.kakao;
 
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Solution2 {
+public class 튜플 {
 
     public static void main(String[] args) {
         int[] answer = solution("{{4,2,3},{3},{2,3,4,1},{2,3}}"	);

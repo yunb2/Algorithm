@@ -1,9 +1,9 @@
-package programmers.kakao.test;
+package programmers.kakao;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution3 {
+public class 불량사용자 {
 
     public static void main(String[] args) {
 

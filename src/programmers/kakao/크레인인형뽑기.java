@@ -1,8 +1,8 @@
-package programmers.kakao.test;
+package programmers.kakao;
 
 import java.util.Stack;
 
-public class Solution1 {
+public class 크레인인형뽑기 {
 
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
